@@ -1,5 +1,11 @@
 # PMS-website-for-wanwanguangfu
 江苏弯弯光伏科技有限公司。written by Flask, in python3 environment.
+实现功能：
+1.在后台管理页面实现灯具的图片、分类与特征参数的CRUD操作；
+2.后台管理员的登录与退出功能，密码进行哈希加密；
+3.前台实现对产品的特征与分类搜索;
+4.只使用SQL语句封装，未使用ORM/WTForm框架。
+
 
 # Apr 2nd 
 First commit:
