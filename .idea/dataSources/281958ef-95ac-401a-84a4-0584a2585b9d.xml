@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - mar@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mar">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="new11"/>
+    <schema id="6" parent="1" name="new_schema"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="sakila"/>
+    <schema id="9" parent="1" name="sys"/>
+    <schema id="10" parent="1" name="test"/>
+    <schema id="11" parent="1" name="world"/>
+    <schema id="12" parent="1" name="marb"/>
+    <table id="13" parent="2" name="admin"/>
+    <table id="14" parent="2" name="category1"/>
+    <table id="15" parent="2" name="new_table"/>
+    <table id="16" parent="2" name="productinfo1"/>
+    <table id="17" parent="2" name="useinfo"/>
+    <column id="18" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="13" name="pwd">
+      <Position>3</Position>
+      <DataType>char(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="21" parent="13" name="name">
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="22" parent="13" name="pwd">
+      <ColNames>pwd</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="24" parent="13" name="name">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>name</UnderlyingIndexName>
+    </key>
+    <key id="25" parent="13" name="pwd">
+      <ColNames>pwd</ColNames>
+      <UnderlyingIndexName>pwd</UnderlyingIndexName>
+    </key>
+    <column id="26" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="27" parent="14" name="categoryname">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="28" parent="14" name="explanation">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <key id="29" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="32" parent="15" name="id_UNIQUE">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="33" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="34" parent="15" name="id_UNIQUE">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="35" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="36" parent="16" name="xinghao">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="16" name="tupian">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="38" parent="16" name="yongtu">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="39" parent="16" name="dongli">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="40" parent="16" name="cailiao">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="41" parent="16" name="fengge">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="42" parent="16" name="zhuti">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="43" parent="16" name="pinpai">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="44" parent="16" name="danjia">
+      <Position>10</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="45" parent="16" name="gonglv">
+      <Position>11</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="46" parent="16" name="gtl">
+      <Position>12</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="47" parent="16" name="sewen">
+      <Position>13</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="48" parent="16" name="fgjd">
+      <Position>14</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="49" parent="16" name="xszs">
+      <Position>15</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="50" parent="16" name="zbq">
+      <Position>16</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="51" parent="16" name="shuoming">
+      <Position>17</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <index id="52" parent="16" name="cailiao">
+      <ColNames>cailiao</ColNames>
+    </index>
+    <index id="53" parent="16" name="dongli">
+      <ColNames>dongli</ColNames>
+    </index>
+    <index id="54" parent="16" name="fengge">
+      <ColNames>fengge</ColNames>
+    </index>
+    <index id="55" parent="16" name="pinpai">
+      <ColNames>pinpai</ColNames>
+    </index>
+    <index id="56" parent="16" name="yongtu">
+      <ColNames>yongtu</ColNames>
+    </index>
+    <index id="57" parent="16" name="zhuti">
+      <ColNames>zhuti</ColNames>
+    </index>
+    <key id="58" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="59" parent="16" name="productinfo1_ibfk_1">
+      <ColNames>yongtu</ColNames>
+      <RefSchemaName>mar</RefSchemaName>
+      <RefTableName>category1</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="60" parent="16" name="productinfo1_ibfk_2">
+      <ColNames>dongli</ColNames>
+      <RefSchemaName>mar</RefSchemaName>
+      <RefTableName>category1</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="61" parent="16" name="productinfo1_ibfk_3">
+      <ColNames>cailiao</ColNames>
+      <RefSchemaName>mar</RefSchemaName>
+      <RefTableName>category1</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="62" parent="16" name="productinfo1_ibfk_4">
+      <ColNames>fengge</ColNames>
+      <RefSchemaName>mar</RefSchemaName>
+      <RefTableName>category1</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="63" parent="16" name="productinfo1_ibfk_5">
+      <ColNames>zhuti</ColNames>
+      <RefSchemaName>mar</RefSchemaName>
+      <RefTableName>category1</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="64" parent="16" name="productinfo1_ibfk_6">
+      <ColNames>pinpai</ColNames>
+      <RefSchemaName>mar</RefSchemaName>
+      <RefTableName>category1</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="65" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="66" parent="17" name="usename">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="17" name="email">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="17" name="phonenumber">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="17" name="password">
+      <Position>5</Position>
+      <DataType>char(40)|0</DataType>
+    </column>
+    <column id="70" parent="17" name="gender">
+      <Position>6</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="71" parent="17" name="birthdate">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="72" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
