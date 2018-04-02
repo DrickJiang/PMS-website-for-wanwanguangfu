@@ -4,9 +4,9 @@
 # Apr 2nd 
 First commit:
 
-database server: Mysql
-database name:mar
-database table : admin/category1/productinfo1
+database server: Mysql;
+database name:mar;
+database table : admin/category1/productinfo1.
 
 sql statement:
     create table useinfo (
