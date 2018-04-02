@@ -9,16 +9,15 @@ database name:mar
 database table : admin/category1/productinfo1
 
 sql statement:
-
-  create table useinfo (
-  id int auto_increment primary key not null,
-  usename varchar(20) not null,
-  email varchar(50) not null,
-  phonenumber varchar(20) not null,
-  password char(40) ,
-  gender bit default 1,
-  birthdate datetime
-  );
+    create table useinfo (
+    id int auto_increment primary key not null,
+    usename varchar(20) not null,
+    email varchar(50) not null,
+    phonenumber varchar(20) not null,
+    password char(40) ,
+    gender bit default 1,
+    birthdate datetime
+    );
 
 CREATE TABLE category1 (
   id INT AUTO_INCREMENT PRIMARY KEY NOT NULL ,
