@@ -96,55 +96,9 @@ left join category1 d on d.id = p.fengge
 LEFT JOIN category1 e on e.id = p.zhuti
 LEFT JOIN category1 f on f.id = p.pinpai;
 
-select
-p.id pid,p.xinghao,p.tupian,p.danjia,p.gonglv,p.gtl,p.sewen,p.fgjd,p.xszs,p.zbq,
-a.categoryname AS 功能,b.categoryname 动力
-  from productinfo1 p
-INNER join category1 a on a.id = p.yongtu
-INNER JOIN category1 b on b.id = p.dongli;
-
-DELETE FROM productinfo1 WHERE id =6;
-INSERT INTO productinfo1(xinghao) VALUES ('sjs3')
-
-
 INSERT INTO category1 VALUES (119,'其他','品牌');
 
 alter table productinfo1 add shuoming TEXT;
-
-select p.xinghao,p.tupian,p.danjia,p.gonglv,p.gtl,p.sewen,p.fgjd,p.xszs,p.zbq,p.shuoming,
-    p.yongtu AS yongtuid,p.dongli AS dongliid,p.cailiao AS cailiaoid,p.fengge AS fenggeid,
-    p.pinpai AS pinpaiid,p.zhuti AS zhutiid,
-    a.categoryname AS yongtu,
-    b.categoryname AS dongli,
-    c.categoryname AS cailiao,
-    d.categoryname AS fengge,
-    e.categoryname AS zhuti,
-    f.categoryname AS pinpai from productinfo1 p
-    LEFT JOIN category1 a ON a.id = p.yongtu
-    LEFT JOIN category1 b ON b.id = p.dongli
-    LEFT JOIN category1 c ON c.id = p.cailiao
-    LEFT JOIN category1 d ON d.id = p.fengge
-    LEFT JOIN category1 e ON e.id = p.zhuti
-    LEFT JOIN category1 f ON f.id = p.pinpai
-
-update productinfo1 set xszs= '95' WHERE xinghao = '323'
-
-SELECT * FROM productinfo1 WHERE xinghao like '%sh%';
-select p.xinghao,
-                    a.categoryname AS yongtu,
-                    b.categoryname AS dongli,
-                    c.categoryname AS cailiao,
-                    d.categoryname AS fengge,
-                    e.categoryname AS zhuti,
-                    f.categoryname AS pinpai,
-                    p.danjia from productinfo1 p
-                    LEFT JOIN category1 a ON a.id = p.yongtu
-                    LEFT JOIN category1 b ON b.id = p.dongli
-                    LEFT JOIN category1 c ON c.id = p.cailiao
-                    LEFT JOIN category1 d ON d.id = p.fengge
-                    LEFT JOIN category1 e ON e.id = p.zhuti
-                    LEFT JOIN category1 f ON f.id = p.pinpai
-                    WHERE p.id> 0 and p.xinghao like '%sh%';
 
 create table admin(
 id int auto_increment primary key not null,
