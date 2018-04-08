@@ -115,7 +115,7 @@ def product_list(id =1):
         pro_number= db.query_sql(sql2)
         db.close_connection()
         unit_products =[]
-        #i是用来显示序号的，mysql内不存在rowid，自定义id不连续，显示出来比较难看。
+        #i是用来显示序号的，mysql内不存在rowid，id不连续，显示出来会比较难看。使用如下代码自定义id能显得好看
         for i,product in enumerate(products[10*(int(id)-1):(10*int(id))]):
             unit_products.append(((i+10*int(id)-9),product))
         #总页数
